@@ -11,8 +11,8 @@ LINE					{ printf("LINE \n"); }
 CIRCLE					{ printf("CIRCLE \n"); }
 RECTANGLE				{ printf("RECTANLGE \n"); }
 SET_COLOR				{ printf("SET COLOR \n"); }
-INT					{ printf("INT \n"); }
-FLOAT					{ printf("FLAOT \n"); } 
+[0-9]					{ printf("INT \n"); }
+[0-9]+.\[0-9]+				{ printf("FLAOT \n"); } 
 [\n\t ]					{ ; }
 .					{ printf("NOT DEFINED \n"); }
 			
