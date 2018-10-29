@@ -2,6 +2,8 @@
 	#include <stdio.h>
 %}
 
+%option yylineno
+
 %%
 
 END					{ printf("End program\n"), exit(1); }
